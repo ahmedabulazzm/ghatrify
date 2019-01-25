@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/courses.css" />
+
+    <title>X Academy | Courses</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <span style="color: gold">X</span> Academy
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobile-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mobile-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/courses.html">
+                  <span style="color: gold">Courses</span></a
+                >
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/about.html"> About </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/contact.html"> Contact </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/register.html"> Register </a>
+              </li>
+              <li class="nav-item pl-md-4 pr-md-4">
+                <a class="nav-link" href="/login.html"> Login </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end navbar -->
+
+    <div id="sidebar" class="visible">
+      <ul>
+        <li><a href="">Pharma</a></li>
+        <li><a href="">Physio</a></li>
+        <li><a href="">Computer Science</a></li>
+        <li><a href="">English</a></li>
+      </ul>
+
+      <div id="sidebar-btn"><span></span> <span></span> <span></span></div>
+    </div>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#sidebar-btn").click(function() {
+          $("#sidebar").toggleClass("visible");
+        });
+      });
+    </script>
+  </body>
+</html>
