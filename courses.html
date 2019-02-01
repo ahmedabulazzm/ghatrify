@@ -11,15 +11,14 @@
       integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/courses.css" />
 
-    <title>X Academy | Courses</title>
+    <link rel="stylesheet" href="./css/courses.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+    <title>weRcourses | Courses</title>
   </head>
   <body>
     <!-- navbar -->
@@ -27,7 +26,7 @@
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <span style="color: gold">X</span> Academy
+            weRcourses
           </a>
           <button
             class="navbar-toggler"
@@ -42,8 +41,8 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item pl-md-4">
                 <a class="nav-link" href="/courses.html">
-                  <span style="color: gold">Courses</span></a
-                >
+                  <span style="color:gold">Courses</span>
+                </a>
               </li>
               <li class="nav-item pl-md-4">
                 <a class="nav-link" href="/about.html"> About </a>
@@ -64,40 +63,119 @@
     </div>
     <!-- end navbar -->
 
-    <div id="sidebar" class="visible">
-      <ul>
-        <li><a href="">Pharma</a></li>
-        <li><a href="">Physio</a></li>
-        <li><a href="">Computer Science</a></li>
-        <li><a href="">English</a></li>
-      </ul>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <ul>
+          <li>
+            <div class="dropdown show dropright">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pharma
+              </a>
 
-      <div id="sidebar-btn"><span></span> <span></span> <span></span></div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" id="actionTrigger">Action</a>
+                <a class="dropdown-item" id="act1Trigger">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Physio</a></li>
+          <li><a href="">Computer Science</a></li>
+          <li><a href="">English</a></li>
+        </ul>
+
+        <a
+          class="btn btn-outline-secondary mt-5 mr-1 ml-1"
+          id="addbtn"
+          data-toggle="tooltip"
+          title="Add Course"
+          data-placement="top"
+          style="display:block;"
+          ><i class="fas fa-plus"></i>
+        </a>
+        <a
+          class="btn btn-outline-secondary mt-1 mr-1 ml-1"
+          id="rembtn"
+          data-toggle="tooltip"
+          title="Remove Course"
+          data-placement="bottom"
+          style="display:block; margin-bottom: 5px;"
+          ><i class="fas fa-minus"></i>
+        </a>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content">
+        <h1 class="display-4">ClassName: News</h1>
+        <hr style="border: orange 0.3px solid" />
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis saepe odit mollitia, magnam commodi optio, minima
+                  amet repellat ipsa id quaerat in tenetur sed est expedita
+                  enim. Mollitia, quos fugiat!
+                </p>
+                <a href="#" class="btn btn-primary">See more</a>
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Obcaecati, aliquid fugit? Dolorem culpa doloribus quo, magnam
+                  aspernatur id quasi cumque facilis nostrum fugit, officiis ea
+                  assumenda eum, sint nemo nulla.
+                </p>
+                <a href="#" class="btn btn-primary">See more</a>
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4 text-center">
+      Copyright &copy; 2019 weRcourses
+    </footer>
 
-    <script>
-      $(document).ready(function() {
-        $("#sidebar-btn").click(function() {
-          $("#sidebar").toggleClass("visible");
-        });
-      });
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

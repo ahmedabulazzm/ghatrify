@@ -1,61 +1,50 @@
-#sidebar {
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-rows: minmax(550px, auto);
+}
+
+.wrapper #sidebar {
   font-family: "Helvetica Neue", Helvetica, Arial;
   background: #151718;
-  width: 200px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  left: -200px;
-  transition: left 0.3s linear;
+  color: #ccc;
 }
 
-#sidebar.visible {
-  left: 0px;
-  transition: left 0.3s linear;
+.wrapper #sidebar ul {
+  margin: 0;
+  padding: 0;
 }
 
-#sidebar ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-#sidebar ul li {
+.wrapper #sidebar ul li {
   list-style: none;
 }
 
-#sidebar ul li a {
+.wrapper #sidebar ul li a {
   background: #1c1e1f;
   color: #ccc;
   border-bottom: 1px solid #111;
   display: block;
-  width: 200px;
+  width: 100%;
   padding: 10px;
   text-decoration: none;
 }
 
-#sidebar-btn {
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 15px;
+.dropdown-menu {
+  background: #1c1e1f;
+}
+
+.wrapper #sidebar ul li .dropdown .dropdown-menu .dropdown-item {
+  border-bottom: none;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   cursor: pointer;
-  margin: 20px;
-  position: absolute;
-  top: 0px;
-  right: -60px;
 }
 
-#sidebar-btn span {
-  height: 1px;
-  background: #111;
-  margin-bottom: 5px;
-  display: block;
+.wrapper #page-content {
+  background: #eee;
+  padding: 1em;
 }
 
-#sidebar-btn span:nth-child(2) {
-  width: 75%;
-}
-
-#sidebar-btn span:nth-child(3) {
-  width: 50%;
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
 }
