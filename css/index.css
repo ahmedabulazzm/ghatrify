@@ -11,11 +11,14 @@ footer {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  padding-top: 1.5em;
 }
 
 .btn {
   min-width: 200px;
+  min-height: 200px;
+  border-radius: 20%;
 }
 
 .landing {
@@ -24,13 +27,61 @@ img {
     no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 0px;
   margin-bottom: -50px;
 }
 
 .landing-inner {
-  padding-top: 80px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .btn {
+    min-width: 120px;
+    min-height: 150px;
+  }
+
+  .display-3 {
+    font-size: 40px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  .landing {
+    min-height: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .btn {
+    min-width: 80px;
+    min-height: 100px;
+  }
+
+  .display-3 {
+    font-size: 40px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  .landing {
+    min-height: 800px;
+  }
 }
 
 .dark-overlay {
@@ -57,4 +108,9 @@ img {
 
 footer {
   border-top: 3px solid goldenrod;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
 }

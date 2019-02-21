@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/userSettings.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+    <title>X Academy | Contact</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            weRcourses
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobile-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mobile-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/courses.html"> Courses </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/about.html"> About </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/contact.html">
+                  Contact
+                </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/register.html"> <i style="color:goldenrod" class="fas fa-user-circle"></i> <span style="color:gold"> Dashboard </span></a>
+              </li>
+              <li class="nav-item pl-md-4 pr-md-4">
+                <a class="nav-link" href="/login.html"> Log Out </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end navbar -->
+
+    <div class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="display-4 mt-4">Settings</h2>
+              <hr style="border: goldenrod 0.5px solid">
+            </div>
+            <!-- available courses -->
+            <div class="container mr-auto ml-auto">
+              <div class="row mb-5">
+              <h4 class="mb-2">Available Courses: </h4>
+              <div class="ml-3 btn-group dropright">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose College
+                  </button>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a>Computer Science</a></li>
+                      <li><a>Pharma</a></li>
+                      <li><a>Physio</a></li>
+                    </ul>
+                  </div>
+                </div>  
+            </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>University</th>
+                    <th>Course Name</th>
+                    <th>Level</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MUST</td>
+                    <td><a href="#" class="course-link">CS 101</a></td>
+                    <td>
+                      Level 1
+                    </td>
+                    <td>
+                      <button class="btn btn-success" title="Add Course">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MUST</td>
+                    <td><a href="#" class="course-link">IS 201</a></td>
+                    <td>
+                      Level 2
+                    </td>
+                    <td>
+                      <button class="btn btn-success" title="Add Course">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end: available courses -->
+            <!-- remove course -->
+            <div class="container  mr-auto ml-auto">
+              <h4 class="mb-2">Selected Courses</h4>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>University</th>
+                    <th>Course Name</th>
+                    <th>Level</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MUST</td>
+                    <td><a href="#" class="course-link">Math 201</a></td>
+                    <td>
+                      Level 2
+                    </td>
+                    <td>
+                      <button class="btn btn-danger" title="Remove Course">
+                          <i class="fas fa-minus"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end: remove course -->
+          </div>
+        </div>
+
+        <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        Copyright &copy; 2019 weRcourses
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

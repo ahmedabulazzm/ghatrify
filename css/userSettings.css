@@ -1,0 +1,32 @@
+.course-link {
+  cursor: pointer;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.course-link:hover {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  background: #1c1e1f;
+}
+
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  list-style: none;
+}
+
+.dropdown-menu ul li a {
+  color: white !important;
+  border-bottom: 1px solid #111;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}

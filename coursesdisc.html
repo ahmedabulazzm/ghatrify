@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/coursesdisc.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+    <title>weRcourses | Courses</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="mb-5 pb-2">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            weRcourses
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobile-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mobile-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/courses.html">
+                  <span style="color:gold">Courses</span>
+                </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/about.html"> About </a>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/contact.html"> Contact </a>
+              </li>
+
+              <li class="nav-item dropdown pl-md-4">
+                <!-- This span is the number of notifications -->
+                <span
+                  class="badge badge-pill badge-info ml-3 float-left"
+                  style="margin-bottom:-10px;"
+                  >1</span
+                >
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" style="color: white" href="#"
+                    >Action</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" style="color: white" href="#"
+                    >Another action</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" style="color: white" href="#"
+                    >Something else here</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item pl-md-4">
+                <a class="nav-link" href="/register.html">
+                  <i class="fas fa-user-circle"></i>
+                  Dashboard</a
+                >
+              </li>
+              <li class="nav-item pl-md-4 pr-md-4">
+                <a class="nav-link" href="/login.html"> Logout </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end navbar -->
+
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <ul>
+          <li>
+            <div class="dropdown show dropright">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pharma
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" id="actionTrigger">Action</a>
+                <a class="dropdown-item" id="act1Trigger">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Physio</a></li>
+          <li><a href="">Computer Science</a></li>
+          <li><a href="">English</a></li>
+        </ul>
+
+        <a
+          class="btn btn-outline-secondary mt-5 mr-1 ml-1"
+          id="addbtn"
+          data-toggle="tooltip"
+          title="Add Course"
+          data-placement="top"
+          style="display:block;"
+          ><i class="fas fa-plus"></i>
+        </a>
+        <a
+          class="btn btn-outline-secondary mt-1 mr-1 ml-1"
+          id="rembtn"
+          data-toggle="tooltip"
+          title="Remove Course"
+          data-placement="bottom"
+          style="display:block; margin-bottom: 5px;"
+          ><i class="fas fa-minus"></i>
+        </a>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content">
+        <h1 class="display-4">ClassName: Discussion</h1>
+        <hr style="border: orange 0.3px solid" />
+        <div class="row">
+          <div class="col-md-7">
+            <!-- Discussion Section -->
+            <div class="discussion">
+              <div class="disc-piece">
+                <div class="card mt-1">
+                  <div class="card-header">
+                    Uploader
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis saepe odit mollitia, magnam commodi optio,
+                      minima amet repellat ipsa id quaerat in tenetur sed est
+                      expedita enim. Mollitia, quos fugiat!
+                    </p>
+                    <a
+                      class="btn btn-primary text-white"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      >See more</a
+                    >
+                    <p class="pt-2" style="float:right; font: xx-small">Time</p>
+                  </div>
+                </div>
+              </div>
+              <div class="disc-piece">
+                <div class="card mt-1">
+                  <div class="card-header">
+                    Uploader
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis saepe odit mollitia, magnam commodi optio,
+                      minima amet repellat ipsa id quaerat in tenetur sed est
+                      expedita enim. Mollitia, quos fugiat!
+                    </p>
+                    <a
+                      class="btn btn-primary text-white"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      >See more</a
+                    >
+                    <p class="pt-2" style="float:right; font: xx-small">Time</p>
+                  </div>
+                </div>
+              </div>
+              <div class="disc-piece">
+                <div class="card mt-1">
+                  <div class="card-header">
+                    Uploader
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis saepe odit mollitia, magnam commodi optio,
+                      minima amet repellat ipsa id quaerat in tenetur sed est
+                      expedita enim. Mollitia, quos fugiat!
+                    </p>
+                    <a
+                      class="btn btn-primary text-white"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      >See more</a
+                    >
+                    <p class="pt-2" style="float:right; font: xx-small">Time</p>
+                  </div>
+                </div>
+              </div>
+              <div class="disc-piece">
+                <div class="card mt-1">
+                  <div class="card-header">
+                    Uploader
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis saepe odit mollitia, magnam commodi optio,
+                      minima amet repellat ipsa id quaerat in tenetur sed est
+                      expedita enim. Mollitia, quos fugiat!
+                    </p>
+                    <a
+                      class="btn btn-primary text-white"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      >See more</a
+                    >
+                    <p class="pt-2" style="float:right; font: xx-small">Time</p>
+                    <hr style="border: grey 0.5px solid" />
+                    <a><i class="fas fa-comments"></i> # of comments</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Discussion -->
+          </div>
+
+          <div class="col-md-5">
+            <!-- Chat box -->
+            <div class="chat">
+              <div class="row chatbox mr-auto ml-auto container mt-2">
+                <div class="col-12">
+                  <div id="chat-body">
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak ya salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          <i class="fas fa-comment"></i>
+                          kosomak
+                          yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                          salah
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row msg text-right">
+                      <div class="col-12 mt-3">
+                        <span class="text-muted small">ID##</span>
+                        <p>
+                          kosomak ya salah
+                          <i class="fas fa-comment myMsg"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="msg-box">
+                    <div class="msg-body">
+                      <form class="form-signin">
+                        <div class="form-label-group">
+                          <input
+                            type="email"
+                            id="inputEmail"
+                            class="form-control"
+                            placeholder="Live Chat"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="msg-btn">
+                      <a href="" class="btn btn-info"
+                        ><i class="fas fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Chat Box -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4 text-center">
+      Copyright &copy; 2019 weRcourses
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Header/Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quae
+              atque blanditiis quos beatae. Ad numquam fugit odit nobis id animi
+              impedit, consequuntur quibusdam harum obcaecati? Itaque ipsa ex
+              repellat?
+            </p>
+            <hr style="border: grey 1px solid" />
+            <h4>Comments</h4>
+            <hr />
+            <!-- The following is the comment instance body, content should come from DB -->
+            <div class="modal-comment">
+              <span class="text-muted small">ID##</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem earum sint culpa! Voluptas ipsa dolorum qui
+                maxime itaque sit explicabo neque. Aut voluptates assumenda
+                ipsam repellat maiores dolore voluptatibus voluptatum?
+              </p>
+              <hr />
+            </div>
+            <!-- Comment end -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-default">
+              Add Comment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis saepe odit mollitia, magnam commodi optio, minima
+                  amet repellat ipsa id quaerat in tenetur sed est expedita
+                  enim. Mollitia, quos fugiat!
+                </p>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Obcaecati, aliquid fugit? Dolorem culpa doloribus quo, magnam
+                  aspernatur id quasi cumque facilis nostrum fugit, officiis ea
+                  assumenda eum, sint nemo nulla.
+                </p>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+<!-- <div class="row">
+                <div
+                  class="col-md-6 offset-md-3 col-sm-6 offset-sm-3 col-12 comments-main pt-4 rounded"
+                >
+                  <ul class="p-0">
+                    <li>
+                      <div class="row comments mb-2">
+                        <div
+                          class="col-md-2 col-sm-2 col-3 text-center user-img"
+                        ></div>
+                        <div
+                          class="col-md-9 col-sm-9 col-9 comment rounded mb-2"
+                        >
+                          <h4 class="m-0"><a href="#">Omar Ghatrify</a></h4>
+                          <time class="text-white ml-3">1 hours ago</time>
+                          <like></like>
+                          <p class="mb-0 text-white">
+                            Kosomak ya salah
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <ul class="p-0">
+                      <li>
+                        <div class="row comments mb-2">
+                          <div
+                            class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1 text-center user-img"
+                          ></div>
+                          <div
+                            class="col-md-7 col-sm-7 col-8 comment rounded mb-2"
+                          >
+                            <h4 class="m-0"><a href="#">Ahmed Sherif</a></h4>
+                            <time class="text-white ml-3">1 week ago</time>
+                            <like></like>
+                            <p class="mb-0 text-white">
+                              Kosomak ya salah
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </ul>
+                  <ul class="p-0">
+                    <li>
+                      <div class="row comments mb-2">
+                        <div
+                          class="col-md-2 col-sm-2 col-3 text-center user-img"
+                        ></div>
+                        <div
+                          class="col-md-9 col-sm-9 col-9 comment rounded mb-2"
+                        >
+                          <h4 class="m-0"><a href="#">Thierry Henry</a></h4>
+                          <time class="text-white ml-3">7 day ago</time>
+                          <like></like>
+                          <p class="mb-0 text-white">
+                            Kosomak ya salah
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <ul class="p-0">
+                      <li>
+                        <div class="row comments mb-2">
+                          <div
+                            class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1 text-center user-img"
+                          ></div>
+                          <div
+                            class="col-md-7 col-sm-7 col-8 comment rounded mb-2"
+                          >
+                            <h4 class="m-0">
+                              <a href="#">jDennis Bergkamp</a>
+                            </h4>
+                            <time class="text-white ml-3">1 min ago</time>
+                            <like></like>
+                            <p class="mb-0 text-white">
+                              ya salah ya ebn el labwa
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </ul>
+                  <ul class="p-0">
+                    <li>
+                      <div class="row comments mb-2">
+                        <div
+                          class="col-md-2 col-sm-2 col-3 text-center user-img"
+                        ></div>
+                        <div
+                          class="col-md-9 col-sm-9 col-9 comment rounded mb-2"
+                        >
+                          <h4 class="m-0"><a href="#">David Seaman</a></h4>
+                          <time class="text-white ml-3">1 month ago</time>
+                          <like></like>
+                          <p class="mb-0 text-white">
+                            ya salah ya ebn el labwaa
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="row comment-box-main p-3 rounded-bottom">
+                    <div class="col-md-9 col-sm-9 col-9 pr-0 comment-box">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="comment ...."
+                      />
+                    </div>
+                    <div
+                      class="col-md-3 col-sm-2 col-2 pl-0 text-center send-btn"
+                    >
+                      <button class="btn btn-info">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->

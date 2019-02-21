@@ -116,39 +116,49 @@
       <div id="page-content">
         <h1 class="display-4">ClassName: News</h1>
         <hr style="border: orange 0.3px solid" />
-        <div class="row mt-4">
-          <div class="col-md-6">
+        <div class="news-section">
+          <div class="news-piece">
             <div class="card mt-1">
               <div class="card-header">
                 Uploader
               </div>
               <div class="card-body">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">
+                <p class="card-text text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perspiciatis saepe odit mollitia, magnam commodi optio, minima
                   amet repellat ipsa id quaerat in tenetur sed est expedita
                   enim. Mollitia, quos fugiat!
                 </p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
                 <p class="pt-2" style="float:right; font: xx-small">Time</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="news-piece">
             <div class="card mt-1">
               <div class="card-header">
                 Uploader
               </div>
               <div class="card-body">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Obcaecati, aliquid fugit? Dolorem culpa doloribus quo, magnam
-                  aspernatur id quasi cumque facilis nostrum fugit, officiis ea
-                  assumenda eum, sint nemo nulla.
+                <p class="card-text text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis saepe odit mollitia, magnam commodi optio, minima
+                  amet repellat ipsa id quaerat in tenetur sed est expedita
+                  enim. Mollitia, quos fugiat!
                 </p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
                 <p class="pt-2" style="float:right; font: xx-small">Time</p>
               </div>
             </div>
@@ -161,6 +171,31 @@
     <footer class="bg-dark text-white p-4 text-center">
       Copyright &copy; 2019 weRcourses
     </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Header/Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quae
+              atque blanditiis quos beatae. Ad numquam fugit odit nobis id animi
+              impedit, consequuntur quibusdam harum obcaecati? Itaque ipsa ex
+              repellat?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -179,3 +214,52 @@
     ></script>
   </body>
 </html>
+
+<!-- <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis saepe odit mollitia, magnam commodi optio, minima
+                  amet repellat ipsa id quaerat in tenetur sed est expedita
+                  enim. Mollitia, quos fugiat!
+                </p>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header">
+                Uploader
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Obcaecati, aliquid fugit? Dolorem culpa doloribus quo, magnam
+                  aspernatur id quasi cumque facilis nostrum fugit, officiis ea
+                  assumenda eum, sint nemo nulla.
+                </p>
+                <a
+                  class="btn btn-primary text-white"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >See more</a
+                >
+                <p class="pt-2" style="float:right; font: xx-small">Time</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
